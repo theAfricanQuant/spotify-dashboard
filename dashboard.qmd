@@ -1,5 +1,5 @@
 ---
-title: "Today's Top Hits"
+title: "Today's German Top 50"
 format: 
   dashboard: 
     logo: "img/Spotify_Logo.png"
@@ -15,6 +15,8 @@ Who do you love? Are you for sure?
 library(tidyverse)
 library(httr2)
 library(gt)
+library(quarto)
+library(jsonlite)
 ```
 
 ```{R, CREATEACCESSTOKEN}
@@ -81,18 +83,36 @@ top_hits_df$tempo <- I(tempo_list)
 ```
 ## Column {width="65%"}
 
-### Row {width="10%"}
+### Row {height="10%"}
 
-```{r, displaypassword}
+Come os
 
-paste0("My username is:", Sys.getenv("MY_USERNAME"))
+### Row {height="70%"}
 
-paste0("My password is:", Sys.getenv("MY_PASSWORD"))
+
+
+```{r, sendtoojs}
+#| echo: false
+#| include: false
+ojs_define(top_hits_ojs = top_hits_df)
 ```
 
-### Row {width="70%"}
+```{ojs}
+//| expandable: false
 
-to to toh
+// Transpose the data to  make it usable in ojs
+
+top_hits = transpose(top_hits_ojs)
+
+// Create a dropdown menu of the songs
+viewof songDropdown = Inputs.select(
+  top_hits.map(d => d.song_name),
+  {
+    label: "Choose a song",
+    unique: true
+  }
+)
+```
 
 ### Row {width="20%"}
 
