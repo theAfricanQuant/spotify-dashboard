@@ -161,31 +161,18 @@ grid-auto-rows: minmax(0, 1fr);">
 </div><div class="bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 10fr) minmax(3em, 70fr) minmax(3em, max-content); grid-auto-columns: minmax(0, 1fr);">
 <div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
 grid-auto-rows: minmax(0, 1fr);">
-<div class="card bslib-card html-fill-container" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
-<div class="card-body html-fill-item html-fill-container">
-<p>Come os</p>
-</div>
-<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
-    <template>Expand</template>
-    <span class="bslib-full-screen-enter badge rounded-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
-    </span>
-</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
-</div>
-<div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
-grid-auto-rows: minmax(0, 1fr);">
 <div class="card cell bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()">
 <div class="card-body html-fill-item html-fill-container">
-<div class="sourceCode cell-code hidden html-fill-item html-fill-container" id="cb1" data-startfrom="105" data-source-offset="-50"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 104;"><span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a>top_hits <span class="op">=</span> <span class="fu">transpose</span>(top_hits_ojs)</span>
-<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a><span class="co">// Create a dropdown menu of the songs</span></span>
-<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a>viewof songDropdown <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(</span>
-<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a>  top_hits<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">song_name</span>)<span class="op">,</span></span>
-<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a>  {</span>
-<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">"Choose a song"</span><span class="op">,</span></span>
-<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>    <span class="dt">unique</span><span class="op">:</span> <span class="kw">true</span></span>
-<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden html-fill-item html-fill-container" id="cb1" data-startfrom="102" data-source-offset="-50"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 101;"><span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a>top_hits <span class="op">=</span> <span class="fu">transpose</span>(top_hits_ojs)</span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a><span class="co">// Create a dropdown menu of the songs</span></span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a>viewof songDropdown <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(</span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a>  top_hits<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">song_name</span>)<span class="op">,</span></span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">"Choose a song"</span><span class="op">,</span></span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a>    <span class="dt">unique</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
 <div class="html-fill-item html-fill-container">
 <div id="ojs-cell-1-1" data-nodetype="declaration" class="html-fill-item html-fill-container">
@@ -198,6 +185,27 @@ grid-auto-rows: minmax(0, 1fr);">
 <div id="ojs-cell-1-2" data-nodetype="declaration" class="html-fill-item html-fill-container">
 
 </div>
+</div>
+</div>
+</div>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+<div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="card cell bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()">
+<div class="card-body html-fill-item html-fill-container">
+<div class="sourceCode cell-code hidden html-fill-item html-fill-container" id="cb2" data-startfrom="117" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 116;"><span id="cb2-117"><a href="#cb2-117" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`&lt;iframe class="custom-iframe" style="border-radius:12px; display: flex; justify-content: center; align-items: center;" </span></span>
+<span id="cb2-118"><a href="#cb2-118" aria-hidden="true" tabindex="-1"></a><span class="vs">  src=</span><span class="sc">${</span><span class="vs">`https://open.spotify.com/embed/track/</span><span class="sc">${</span>top_hits<span class="op">.</span><span class="fu">find</span>(song <span class="kw">=&gt;</span> song<span class="op">.</span><span class="at">song_name</span> <span class="op">===</span> songDropdown)<span class="op">.</span><span class="at">song_id</span><span class="sc">}</span><span class="vs">?utm_source=generator&amp;theme=0`</span><span class="sc">}</span><span class="vs"> </span></span>
+<span id="cb2-119"><a href="#cb2-119" aria-hidden="true" tabindex="-1"></a><span class="vs">  width="100%" </span></span>
+<span id="cb2-120"><a href="#cb2-120" aria-hidden="true" tabindex="-1"></a><span class="vs">  height="352" </span></span>
+<span id="cb2-121"><a href="#cb2-121" aria-hidden="true" tabindex="-1"></a><span class="vs">  frameBorder="0" </span></span>
+<span id="cb2-122"><a href="#cb2-122" aria-hidden="true" tabindex="-1"></a><span class="vs">  allowfullscreen="" </span></span>
+<span id="cb2-123"><a href="#cb2-123" aria-hidden="true" tabindex="-1"></a><span class="vs">  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" </span></span>
+<span id="cb2-124"><a href="#cb2-124" aria-hidden="true" tabindex="-1"></a><span class="vs">  loading="lazy"&gt;</span></span>
+<span id="cb2-125"><a href="#cb2-125" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;/iframe&gt;`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display html-fill-item html-fill-container">
+<div id="ojs-cell-2" data-nodetype="expression" class="html-fill-item html-fill-container">
+
 </div>
 </div>
 </div>
@@ -223,7 +231,7 @@ grid-auto-rows: minmax(0, 1fr);">
 
 
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuLy8gVHJhbnNwb3NlIHRoZSBkYXRhIHRvICBtYWtlIGl0IHVzYWJsZSBpbiBvanNcblxudG9wX2hpdHMgPSB0cmFuc3Bvc2UodG9wX2hpdHNfb2pzKVxuXG4vLyBDcmVhdGUgYSBkcm9wZG93biBtZW51IG9mIHRoZSBzb25nc1xudmlld29mIHNvbmdEcm9wZG93biA9IElucHV0cy5zZWxlY3QoXG4gIHRvcF9oaXRzLm1hcChkID0+IGQuc29uZ19uYW1lKSxcbiAge1xuICAgIGxhYmVsOiBcIkNob29zZSBhIHNvbmdcIixcbiAgICB1bmlxdWU6IHRydWVcbiAgfVxuKVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdzb25nRHJvcGRvd24nKSJ9XX0=
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuLy8gVHJhbnNwb3NlIHRoZSBkYXRhIHRvICBtYWtlIGl0IHVzYWJsZSBpbiBvanNcblxudG9wX2hpdHMgPSB0cmFuc3Bvc2UodG9wX2hpdHNfb2pzKVxuXG4vLyBDcmVhdGUgYSBkcm9wZG93biBtZW51IG9mIHRoZSBzb25nc1xudmlld29mIHNvbmdEcm9wZG93biA9IElucHV0cy5zZWxlY3QoXG4gIHRvcF9oaXRzLm1hcChkID0+IGQuc29uZ19uYW1lKSxcbiAge1xuICAgIGxhYmVsOiBcIkNob29zZSBhIHNvbmdcIixcbiAgICB1bmlxdWU6IHRydWVcbiAgfVxuKVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiaHRtbGA8aWZyYW1lIGNsYXNzPVwiY3VzdG9tLWlmcmFtZVwiIHN0eWxlPVwiYm9yZGVyLXJhZGl1czoxMnB4OyBkaXNwbGF5OiBmbGV4OyBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsgYWxpZ24taXRlbXM6IGNlbnRlcjtcIiBcbiAgc3JjPSR7YGh0dHBzOi8vb3Blbi5zcG90aWZ5LmNvbS9lbWJlZC90cmFjay8ke3RvcF9oaXRzLmZpbmQoc29uZyA9PiBzb25nLnNvbmdfbmFtZSA9PT0gc29uZ0Ryb3Bkb3duKS5zb25nX2lkfT91dG1fc291cmNlPWdlbmVyYXRvciZ0aGVtZT0wYH0gXG4gIHdpZHRoPVwiMTAwJVwiIFxuICBoZWlnaHQ9XCIzNTJcIiBcbiAgZnJhbWVCb3JkZXI9XCIwXCIgXG4gIGFsbG93ZnVsbHNjcmVlbj1cIlwiIFxuICBhbGxvdz1cImF1dG9wbGF5OyBjbGlwYm9hcmQtd3JpdGU7IGVuY3J5cHRlZC1tZWRpYTsgZnVsbHNjcmVlbjsgcGljdHVyZS1pbi1waWN0dXJlXCIgXG4gIGxvYWRpbmc9XCJsYXp5XCI+XG48L2lmcmFtZT5gXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3NvbmdEcm9wZG93bicpIn1dfQ==
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
