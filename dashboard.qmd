@@ -8,7 +8,7 @@ format:
 
 ## Column {width="35%"}
 
-Who do you love? Are you for sure?
+
 ```{r, loadpackages}
 #| echo: false
 #| include: false
