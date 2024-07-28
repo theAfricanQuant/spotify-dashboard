@@ -17,8 +17,67 @@ library(httr2)
 library(gt)
 ```
 
-```{r}
-head(starwars)
+```{R, CREATEACCESSTOKEN}
+#| echo: false
+#| include: false
+client_id <- Sys.getenv("SPOTIFY_CLIENT_ID")
+client_secret <- Sys.getenv("SPOTIFY_CLIENT_SECRET")
+
+# Generate Spotify access token
+
+req_access_token <- request("https://accounts.spotify.com/api/token") |> 
+  req_method("POST") |> 
+  req_body_raw(paste0(
+    "grant_type=client_credentials&client_id=", client_id,
+   "&client_secret=", client_secret
+  ),
+  "application/x-www-form-urlencoded") |> 
+  req_perform() |> 
+  resp_body_json()
+spotify_access_token <- req_access_token$access_token
+```
+
+```{r, gettthplaylist}
+#| echo: false
+#| include: false
+# Get Today's Top Hits Playlist information
+
+tth <- request("https://api.spotify.com/v1/playlists/37i9dQZEVXbJiZcmkrIHGU") |> 
+  req_method("GET") |> 
+  req_headers(
+    Authorization = paste0("Bearer ", spotify_access_token),
+  ) |> 
+  req_perform() |> 
+  resp_body_json()
+
+# Create a DataFrame with German top 50 hits information
+
+top_hits_df <- data.frame(
+  song_name = unlist(lapply(tth$tracks$items, FUN = function(x) { x$track$name })),
+  song_id = unlist(lapply(tth$tracks$items, FUN = function(x) { x$track$id })),
+  artist_name = unlist(lapply(tth$tracks$items, FUN = function(x) {x$track$album$artists[[1]]$name})),
+  album_art = unlist(lapply(tth$tracks$items, FUN = function(x) {x$track$album$images[[1]]$url})),
+  track_duration = unlist(lapply(tth$tracks$items, FUN = function(x) {x$track$duration_ms})), 
+  popularity = unlist(lapply(tth$tracks$items, FUN = function(x) {x$track$popularity}))
+)
+
+tempo_list <- vector(mode = "list", length = 50)
+for (i in 1:50) {
+
+audio_analysis <- request(paste0("https://api.spotify.com/v1/audio-analysis/",  top_hits_df$song_id[i])) |> 
+  req_method("GET") |> 
+  req_headers(
+    Authorization = paste0("Bearer ", spotify_access_token),
+  ) |> 
+  req_perform() |>
+  resp_body_json()
+
+  # Get tempo for each section of the song
+  tempo_list[[i]] <- unlist(lapply(audio_analysis$sections, FUN = function(x) {x$tempo }))
+
+}
+
+top_hits_df$tempo <- I(tempo_list)
 ```
 ## Column {width="65%"}
 
