@@ -24,7 +24,12 @@ head(starwars)
 
 ### Row {width="10%"}
 
-kai mana
+```{r, displaypassword}
+
+paste0("My username is:", Sys.getenv("MY_USERNAME"))
+
+paste0("My password is:", Sys.getenv("MY_PASSWORD"))
+```
 
 ### Row {width="70%"}
 
