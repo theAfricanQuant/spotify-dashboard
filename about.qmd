@@ -2,8 +2,16 @@
 title: "About"
 ---
 
-About this site
 
-```{r}
-1 + 1
-```
+### About This Project
+
+This project showcases a Spotify dashboard that displays a curated selection of hit songs of my choosing. The dashboard allows for an interactive exploration of music playlists, complete with song details, popularity metrics, and audio previews directly from Spotify.
+
+#### A Special Thanks
+
+I want to extend my heartfelt thanks to Melissa Van Bussel for her fantastic series of step-by-step videos, which were instrumental in guiding me through the process of creating this dashboard. Her tutorials provided the clarity and direction needed to build and customize this engaging and informative tool. 
+
+If you're interested in learning how to create a similar dashboard, I highly recommend checking out her tutorials [here](https://melissavanbussel.github.io/spotify-dashboard/).
+
+Feel free to interact with my dashboard and explore the selected playlists [here](https://www.sisengai.com/spotify-dashboard/dashboard.html#). Thank you for visiting and enjoy the music!
+
