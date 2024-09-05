@@ -1,5 +1,15 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About This Project\nThis project showcases a Spotify dashboard that displays a curated selection of hit songs of my choosing. The dashboard allows for an interactive exploration of music playlists, complete with song details, popularity metrics, and audio previews directly from Spotify.\n\nA Special Thanks\nI want to extend my heartfelt thanks to Melissa Van Bussel for her fantastic series of step-by-step videos, which were instrumental in guiding me through the process of creating this dashboard. Her tutorials provided the clarity and direction needed to build and customize this engaging and informative tool.\nIf you’re interested in learning how to create a similar dashboard, I highly recommend checking out her tutorials here.\nFeel free to interact with my dashboard and explore the selected playlists here. Thank you for visiting and enjoy the music!",
+    "crumbs": [
+      "About"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "theAfricanQuant’s selected Hits",
@@ -17,16 +27,6 @@
     "text": "Welcome to our interactive music dashboard, where you can dive deep into popular music playlists from around the world!\n\n\n\nTop Christian Worship Songs: Discover some of the most popular worship songs, complete with song details, artist information, and album art. Find out which songs are trending in the Christian music genre.\nAfro Acoustic: Experience a unique collection of Afro Acoustic songs. Learn more about the artists, see the song popularity, and enjoy the diverse musical tempos.\nToday’s German Top 50: Explore the top hits currently making waves in Germany. See which songs are topping the charts, who the popular artists are, and enjoy a sample of each track.\n\n\n\n\n\nInteractive Song Selection: Use the dropdown menus to select different songs and view their details, including song popularity, artist name, album art, and tempo variations.\nSpotify Integration: Listen to song previews directly in the dashboard! Simply select a song, and a Spotify player will let you enjoy a snippet of the track.\nVisual Representation of Data: See song popularity represented as color-coded circles. The bigger and greener the circle, the more popular the song!\n\n\n\n\nThis dashboard is perfect for anyone who loves music and wants to explore popular playlists in a fun and interactive way. Whether you are looking for new music to enjoy or just curious about current music trends, this tool provides a visually appealing and informative experience.\nCheck it out by clicking here and immerse yourself in the world of music!",
     "crumbs": [
       "Home"
-    ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About This Project\nThis project showcases a Spotify dashboard that displays a curated selection of hit songs of my choosing. The dashboard allows for an interactive exploration of music playlists, complete with song details, popularity metrics, and audio previews directly from Spotify.\n\nA Special Thanks\nI want to extend my heartfelt thanks to Melissa Van Bussel for her fantastic series of step-by-step videos, which were instrumental in guiding me through the process of creating this dashboard. Her tutorials provided the clarity and direction needed to build and customize this engaging and informative tool.\nIf you’re interested in learning how to create a similar dashboard, I highly recommend checking out her tutorials here.\nFeel free to interact with my dashboard and explore the selected playlists here. Thank you for visiting and enjoy the music!",
-    "crumbs": [
-      "About"
     ]
   }
 ]
