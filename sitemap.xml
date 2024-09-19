@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://theAfricanQuant.github.io/spotify-dashboard/about.html</loc>
-    <lastmod>2024-09-18T09:03:50.836Z</lastmod>
-  </url>
-  <url>
     <loc>https://theAfricanQuant.github.io/spotify-dashboard/dashboard.html</loc>
-    <lastmod>2024-09-18T09:03:50.840Z</lastmod>
+    <lastmod>2024-09-19T09:02:37.667Z</lastmod>
   </url>
   <url>
     <loc>https://theAfricanQuant.github.io/spotify-dashboard/index.html</loc>
-    <lastmod>2024-09-18T09:03:50.840Z</lastmod>
+    <lastmod>2024-09-19T09:02:37.668Z</lastmod>
+  </url>
+  <url>
+    <loc>https://theAfricanQuant.github.io/spotify-dashboard/about.html</loc>
+    <lastmod>2024-09-19T09:02:37.666Z</lastmod>
   </url>
 </urlset>
